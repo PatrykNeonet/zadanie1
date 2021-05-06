@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      button {
+        border: none;
+      }
+      .btn {
+        padding: 10px 35px;
+        color: #fff;
+        background: #ff444f;
+        border-radius: 25px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background 0.2s linear, color 0.2s linear;
+      }
+      .btn:hover {
+        border: 2px solid #ff444f;
+        background: #ffffff;
+        color: #ff444f;
+      }
+      .content {
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .content-1 {
+        background-color: #3f79cf;
+      }
+      .content-2 {
+        background-color: #3fcf63;
+      }
+      .content-3 {
+        background-color: #cfc53f;
+      }
+    </style>
+
+    <button class="btn" data-target="content-1">button 1</button>
+    <button class="btn" data-target="content-2">button 2</button>
+    <button class="btn" data-target="content-3">button 3</button>
+
+    <div class="content content-1 disp"><p>content 1</p></div>
+    <div class="content content-2"><p>content 2</p></div>
+    <div class="content content-3"><p>content 3</p></div>
+  </body>
+</html>
